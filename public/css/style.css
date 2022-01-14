@@ -36,10 +36,13 @@ header {
 }
 
 main {
-    display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
     background-color: var(--secondary);
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-top: 3rem;
+    justify-content: center;
 }
 
 aside {
@@ -88,6 +91,11 @@ nav a {
     font-size: 100%;
     transition: color 0.1s;
     margin-left: 16px;
+    color: var(--secondary);
+}
+
+.btn-no-style:hover {
+    text-decoration: underline !important;
 }
 
 img {
@@ -133,10 +141,6 @@ h2 {
     text-decoration: underline;
     justify-content: center;
     display: flex;
-}
-
-form {
-    margin: 5rem;
 }
 
 footer {
