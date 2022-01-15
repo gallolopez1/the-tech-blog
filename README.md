@@ -6,7 +6,7 @@ Build a CMS-style blog site similar to a Wordpress site, where developers can pu
 
 ## Usage
 
-After 1 minute of being idle, you can still view comments but will be prompted to log in again before yoy can add, update, or delete comments. 
+After 1 minute of being idle, you can still view comments but will be prompted to log in again before yoy can add, update, or delete comments/posts. 
 
 ## Links
 
