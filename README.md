@@ -10,7 +10,7 @@ After 1 minute of being idle, you can still view comments but will be prompted t
 
 ## Links
 
-* 🌎 [Heroku Page](#)
+* 🌎 [Heroku Page](https://guarded-eyrie-44992.herokuapp.com/)
 * 💾 [Repo](https://github.com/gallolopez1/the-tech-blog)
 
 ## User Story
