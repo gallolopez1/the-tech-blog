@@ -2,23 +2,23 @@ const sequelize = require('../config/connection');
 const { User, Post } = require('../models');
 
 const userdata = [{
-        username: 'alesmonde0',
-        email: 'nwestnedge0@cbc.ca',
+        username: 'r00ster_96',
+        email: 'r00ster@gmail.com',
         password: 'password123'
     },
     {
-        username: 'jwilloughway1',
-        email: 'rmebes1@sogou.com',
+        username: 'jwillson-23',
+        email: 'jwillson@gmail.com',
         password: 'password123'
     },
     {
-        username: 'iboddam2',
-        email: 'cstoneman2@last.fm',
+        username: 'sBoom!',
+        email: 'sboom@gmail.com',
         password: 'password123'
     },
     {
-        username: 'jmacarthur9',
-        email: 'bsteen9@epa.gov',
+        username: 'Mr.Chico',
+        email: 'mrchico@gmail.com',
         password: 'password123'
     }
 ];
