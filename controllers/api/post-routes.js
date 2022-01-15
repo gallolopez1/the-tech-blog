@@ -98,7 +98,9 @@ router.put('/blog-post', withAuth, (req, res) => {
 
 router.put('/:id', withAuth, (req, res) => {
     Post.update({
-            title: req.body.title
+            title: req.body.title,
+            description: req.body.description,
+            user_id: req.session.user_id
         }, {
             where: {
                 id: req.params.id
