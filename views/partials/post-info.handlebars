@@ -1,9 +1,12 @@
 <article class="post">
   <div class="title">
-    <a href="/dashboard/edit/{{post.id}}" class="edit-link"><h3>{{title}}</h3></a>
+    <a href="/post/{{id}}" class="edit-link"><h3>{{title}}</h3></a>
     <p style="display: flex;"> posted by {{user.username}} on {{format_date created_at}}</p>
+  </div>
+  <div class="description">
+    <p style="font-size: large; font: arial; font-weight: 500; margin: 1rem;">{{description}}</p>
   </div>
   <div class="meta">
     <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
-  </div>
+  </div>  
 </article>

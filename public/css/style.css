@@ -161,6 +161,19 @@ footer {
 }
 
 
+/* Add style to comments */
+
+.meta {
+    font: arial;
+    font-weight: bold;
+}
+
+div.text {
+    font: arial;
+    padding: 0 1rem 1rem 1rem;
+}
+
+
 /* Add style to posts */
 
 article {

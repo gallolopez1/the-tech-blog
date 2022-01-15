@@ -10,6 +10,7 @@ router.get('/', (req, res) => {
             attributes: [
                 'id',
                 'title',
+                'description',
                 'created_at'
             ],
             include: [{
@@ -41,6 +42,7 @@ router.get('/:id', (req, res) => {
             attributes: [
                 'id',
                 'title',
+                'description',
                 'created_at'
             ],
             include: [{
@@ -62,6 +64,7 @@ router.get('/:id', (req, res) => {
                 res.status(404).json({ message: 'No post found with this id' });
                 return;
             }
+            console.log(dbPostData);
             res.json(dbPostData);
         })
         .catch(err => {
@@ -74,6 +77,7 @@ router.post('/', withAuth, (req, res) => {
     // expects {title: 'Taskmaster goes public!', post_url: 'https://taskmaster.com/press', user_id: 1}
     Post.create({
             title: req.body.title,
+            description: req.body.description,
             user_id: req.session.user_id
         })
         .then(dbPostData => res.json(dbPostData))

@@ -4,6 +4,10 @@
 
 Build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. You’ll build this site completely from scratch and deploy it to Heroku. Your app will follow the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
 
+## Usage
+
+After 1 minute of being idle, you can still view comments but will be prompted to log in again before yoy can add, update, or delete comments. 
+
 ## Links
 
 * 🌎 [Heroku Page](#)

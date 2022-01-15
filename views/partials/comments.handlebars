@@ -1,7 +1,10 @@
-<div class="comments">
+<article class="post">
+  <div class="title">
+      <h4>Comments</h4>
+  </div>  
   {{#each this}}
-  <section class="comment">
-    <div class="meta">
+  <section style="border: solid var(--tertiary); margin: .5rem; border-radius: 1rem;" class="comment">
+    <div style="text-decoration: underline; font-size:large;" class="meta">
       {{user.username}} on {{format_date created_at}}
     </div>
     <div class="text">
@@ -9,4 +12,4 @@
     </div>
   </section>
   {{/each}}
-</div>
+</article>
