@@ -6,11 +6,14 @@
       <label class="label" for="post-title">Title</label>
       <input class="input" type="text" id="post-title" name="post-title" />
     </div>
+    
     <div class="field">
-      <label class="label" for="post-url">Link</label>
-      <input class="input" id="post-url" name="post-url" />
+      <label class="label" for="post-description">Description</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Textarea"></textarea>
+         </div>
     </div>
-    <button class="button" type="submit" class="btn">Create</button>
+    <button class="button is-fullwidth is-dark is-large" type="submit" class="btn">Create</button>
   </form>
 </section>
 
@@ -19,14 +22,13 @@
 {{#if posts.length}}
 <section>
   <h2>Your Posts</h2>
-  <ol>
+  <ul>
     {{#each posts as |post|}}
     <li>
       {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
     </li>
     {{/each}}
-  </ol>
+  </ul>
 </section>
 {{/if}}
 

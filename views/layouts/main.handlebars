@@ -20,7 +20,7 @@
     <nav>
       <a href="/">Home</a>
       {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
+        <a href="/dashboard">Dashboard</a>
       {{else}}
         <a href="/login">Dashboard</a>
       {{/if}}
@@ -32,7 +32,11 @@
     </nav>
     <header>
       <div class="main-title">
+        {{#if dashBoard}}
+        <h1>Dashboard</h1>
+        {{else}}
         <h1>The Tech Blog</h1>
+        {{/if}}     
       </div>
     </header>
     <div class="wrapper"></div>
